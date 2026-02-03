@@ -1,0 +1,143 @@
+%-------------------------
+% Professional Resume Template (LaTeX)
+% Suitable for: Software Engineers, Data Analysts, IT Professionals
+% License: MIT
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titrule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape YOUR NAME} \\ \vspace{4pt}
+    \textbf{\Large \scshape Job Title / Aspirations} \\ \vspace{4pt}
+    \small \faPhone\ +00 000 000 0000 ~ 
+    \href{mailto:email@example.com}{\faEnvelope\ \underline{email@example.com}} ~ 
+    \href{https://linkedin.com/in/username}{\faLinkedin\ \underline{linkedin.com/in/username}} ~
+    \href{https://github.com/username}{\faGithub\ \underline{github.com/username}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Briefly describe your professional background, key technical strengths, and career goals. Highlight your most significant impact or specialized area of expertise in 2-3 concise sentences.
+
+%-----------SKILLS-----------
+\section{Skills}
+\textbf{Languages:} List languages here (e.g., Java, Python, SQL, C++) \\
+\textbf{Frameworks/Libraries:} List tools here (e.g., React, Spring Boot, TensorFlow) \\
+\textbf{Tools \& Databases:} List technical tools (e.g., Git, Docker, AWS, MySQL) \\
+\textbf{Soft Skills:} Critical Thinking, Team Leadership, Technical Writing
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Job Title / Role}{Start Date -- End Date/Present}
+    {Company Name}{Location / Remote}
+    \resumeItemListStart
+      \resumeItem{Describe a key responsibility and the impact it had using active verbs.}
+      \resumeItem{Include a quantifiable metric (e.g., "Improved system efficiency by 20\%").}
+      \resumeItem{Mention specific technologies used to solve problems within the role.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Previous Role}{Start Date -- End Date}
+    {Previous Company}{Location}
+    \resumeItemListStart
+      \resumeItem{Discussed major projects or tasks completed during this tenure.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+      {\textbf{Project Name} $|$ \emph{Technologies Used}}{Date Range}
+      \resumeItemListStart
+        \resumeItem{Describe the problem the project solves and your specific contribution.}
+        \resumeItem{Detail the technical implementation (e.g., "Architected a REST API using Node.js").}
+        \resumeItem{Include a link to the repository if available.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------AWARDS & CERTIFICATIONS-----------
+\section{Awards \& Certifications}
+\resumeItemListStart
+  \resumeItem{\textbf{Certification Name:} Issued by [Organization] ([Year]).}
+  \resumeItem{\textbf{Award/Honor:} Description of the achievement or ranking ([Year]).}
+\resumeItemListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Degree Name}{Graduation Year}
+    {University Name}{Location}
+\resumeSubHeadingListEnd
+
+\end{document}
